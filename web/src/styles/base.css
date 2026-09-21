@@ -1,0 +1,565 @@
+@import "./fonts.css";
+
+/*
+ * Базовая раскладка страницы: сетка через именованные grid-области, два
+ * брейкпоинта (1120 и 780) — перестроение колонок, а не сжатие до
+ * нечитаемости.
+ */
+
+:root {
+  --bg: #0b0c13;
+  --panel: #181820;
+  --line: #383943;
+  --ink: #ffffff;
+  --muted: #acacaf;
+  --acid: #b88cff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 24px;
+  border-bottom: 2px solid var(--line);
+}
+.top__left { min-width: 0; }
+.top__partner { flex: 0 0 auto; }
+
+.brand {
+  display: flex; align-items: center;
+  font-family: var(--font-pixel); font-size: 28px; letter-spacing: 0.02em;
+}
+.brand__icon {
+  width: 46px; height: auto; margin-right: 12px;
+  image-rendering: pixelated;
+  /* Оптическая поправка: у мухи в спрайте больше «массы» в нижней половине
+     (лапки ниже тела), из-за чего align-items:center кажется чуть низко
+     относительно капхайта букв. transform не трогает раскладку — размер и
+     отступ до текста остаются как есть, сдвигается только сама картинка. */
+  transform: translateY(-1px);
+}
+.brand__cashback { color: var(--ink); }
+.brand__fly { color: var(--acid); }
+
+/* Тот же кегль, что у CASHBACKFLY слева: обе марки должны читаться
+   одним размером в шапке, а не одна крупнее другой. */
+.partner__link { display: inline-flex; outline: none; }
+.partner__logo { height: 46px; width: auto; }
+
+.rooms { display: flex; gap: 8px; padding: 12px 24px 0; }
+.rooms[hidden] { display: none; }
+.rooms__item {
+  background: var(--panel);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.rooms__item[data-current] { color: var(--ink); border-color: var(--acid); }
+
+/* Сетка 2×2: муха и категории сверху, нейроактивность и комната снизу. */
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(430px, 1fr);
+  grid-template-areas:
+    "caption ."
+    "stage categories"
+    "activity room";
+  /* Подпись — своя строка только над левой колонкой (правая клетка пустая:
+     "." в grid-template-areas), поэтому она не задирает высоту строки
+     stage/categories. Ячейки в строке растягиваются на высоту самой
+     высокой (align-items — дефолтный stretch): у сцены с мухой и блока
+     ЦНС нижняя граница всегда совпадает с соседом по строке, а верхняя —
+     благодаря отдельной строке подписи. */
+  grid-template-rows: auto auto auto;
+  gap: 18px 24px;
+  padding: 20px 24px;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.stage-caption { grid-area: caption; }
+.zone--stage { grid-area: stage; }
+.panel--categories { grid-area: categories; }
+.panel--cns { grid-area: activity; }
+.panel--room { grid-area: room; }
+
+.stage-caption {
+  font-family: var(--font-pixel); font-size: 10px; line-height: 1.6;
+  color: var(--muted); margin: 0; max-width: 60ch;
+}
+
+.zone--stage {
+  min-height: 320px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.zone--stage canvas { display: block; width: 100%; height: 100%; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+}
+
+.panel__title {
+  font-family: var(--font-pixel); font-size: 11px; font-weight: 400;
+  letter-spacing: 0.02em; line-height: 1.6; margin: 0 0 10px;
+}
+
+/* --- категории --- */
+
+.cats { list-style: none; margin: 0; padding: 0; }
+.cats__counter { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+
+.cats__with { display: flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+.cats__with-text { font-size: 13px; }
+.yapay {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 5px;
+  background: #fc3f1d; color: #fff; font-size: 12px; font-weight: 500;
+}
+
+.cats__card { position: relative; background: rgba(0, 0, 0, 0.22); border-radius: 12px; padding: 4px 12px; }
+
+
+.cat {
+  display: grid;
+  grid-template-columns: 28px 1fr 20px;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 4px;
+  border-radius: 8px;
+}
+/* Разделителей в покое нет: список читается как единое поле, а подсветка
+   строки под «лапой» мухи и так выделяет нужную. */
+.cat__icon {
+  width: 28px; height: 28px; border-radius: 50%;
+  /* Заглушка для категорий без иконки: нейтральный серый круг, не тянет
+     внимание, в отличие от прежнего яркого жёлтого. */
+  background: #4a4d5c;
+  background-size: cover;
+  /* Пиксели не сглаживаем при масштабировании — иначе фильтр теряет смысл. */
+  image-rendering: pixelated;
+}
+.cat__icon[data-pixelated] { background-color: transparent; }
+.cat__title { font-size: 13px; }
+.cat[data-boosted] .cat__title { color: #fff; }
+.cat[data-presenting] { background: rgba(215, 255, 106, 0.07); }
+.cat[data-selected] .cat__title { font-weight: 500; }
+
+.cat__box {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #2a2b34;
+  color: transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.cat[data-selected] .cat__box {
+  background: #ffffff; border-color: #ffffff; color: var(--bg);
+}
+.cat[data-selected][data-boosted] .cat__box {
+  background: var(--acid); border-color: var(--acid); color: var(--bg);
+}
+
+/* --- карта ЦНС --- */
+
+/* Колонка, чтобы легенду ниже можно было отцентровать в свободном месте
+   между канвасом и нижней рамкой (панель растянута по высоте соседней
+   .panel--room через grid stretch, и это место — не константа). */
+.panel--cns { display: flex; flex-direction: column; }
+.cns__head { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; }
+.cns__label {
+  color: var(--muted); font-size: 9px; text-transform: uppercase;
+  letter-spacing: 0.02em; font-family: var(--font-pixel);
+}
+.cns__dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--acid); margin-left: auto;
+}
+.cns__canvas { width: 100%; display: block; background: rgba(0, 0, 0, 0.3); }
+/* auto сверху и снизу — легенда сама встаёт по центру свободного места
+   под канвасом, а не липнет к нему сразу с фиксированным отступом. */
+.cns__legend { display: flex; gap: 32px; margin-top: auto; margin-bottom: auto; }
+.cns__legend-item { display: flex; flex-direction: column; gap: 6px; }
+.cns__legend-item b { font-weight: 500; font-size: 12px; }
+.cns__legend-count { color: var(--acid); }
+.cns__legend-item i {
+  font-style: normal; color: var(--muted); font-size: 9px;
+  font-family: var(--font-pixel);
+}
+
+/* --- комната --- */
+
+/* Служебный лейбл — как «ЧАСТОТА РАЗРЯДОВ»: капсом, без акцента. */
+.room__label {
+  color: var(--muted); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.02em; font-family: var(--font-pixel);
+}
+
+/* Видимая граница перед статусом выбора — тот же приём, что у строки
+   вкладок: чёткая линия-разделитель вместо пробела, чтобы «Выбор сделан» и
+   легенда цвета читались как отдельный раздел таблицы, а не хвост блока
+   интересов. */
+.room__phase {
+  color: var(--acid); font-size: 13px; font-weight: 500;
+  margin-top: 16px; padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.room__explain {
+  color: var(--muted); font-size: 12px; line-height: 1.45;
+  margin-top: 6px; max-width: 62ch;
+  /* Заголовок и текст меняют длину («Отмечает» короче «Выбор сделан», и
+     тело у каждого статуса своей длины) — без резерва высоты блок ходил
+     вверх-вниз на каждую смену состояния, а с ним и вся строка грида
+     (эта панель тянет высоту .panel--cns через stretch). Три строки —
+     подтверждённый на живых данных максимум («Выбор сделан» с обеими
+     половинами фразы, boosted и own, вместе), резервируем под него — резерв
+     на две строки (был раньше) и давал ровно этот скачок 34.8px↔52.2px,
+     замеренный в браузере через getBoundingClientRect. */
+  min-height: calc(1.45em * 3);
+}
+
+.plot__head { display: flex; justify-content: space-between; gap: 12px;
+  margin: 16px 0 4px; flex-wrap: wrap; }
+.plot__label, .plot__scale {
+  color: var(--muted); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.06em; font-family: var(--font-mono);
+}
+/* Оптическое выравнивание: у пиксельного шрифта на этом кегле цифры
+   визуально ниже строчных букв моно — без сдвига подпись «плывёт» вниз
+   относительно значений. */
+.plot__label, .plot__scale-label { position: relative; top: -1px; }
+/* Числа внутри строки шкалы (диапазон Гц, счётчик нейронов) — пиксельным
+   акцентом, как остальные показания приборки; «автомасштаб»/«нейронов»
+   вокруг них остаются обычной служебной подписью. */
+.plot__scale-value { color: var(--acid); font-family: var(--font-pixel); }
+.plot__canvas { width: 100%; height: 110px; display: block; background: rgba(0, 0, 0, 0.25); }
+
+.room__metrics { display: flex; gap: 24px; margin-top: 10px; }
+.mini { display: flex; flex-direction: column; gap: 6px; }
+.mini__label {
+  color: var(--muted); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.06em; font-family: var(--font-mono);
+}
+.mini__value {
+  font-family: var(--font-pixel); font-size: 15px; color: var(--acid);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Отступ от заголовка «ИНТЕРЕСЫ» до баблов = тому же 16px, что от баблов
+   до серой линии ниже (.room__phase) — раньше было 8px/16px, разница была
+   заметна на глаз. Gap между самими баблами увеличен, чтобы при переносе
+   на вторую строку они не слипались друг с другом. */
+.interests { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; padding: 0; }
+.interest {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.interest[data-active] { color: var(--bg); background: var(--acid); border-color: var(--acid); }
+
+.room__service {
+  margin-top: 12px; padding-top: 10px;
+  border-top: 1px solid rgba(56, 57, 67, 0.5);
+  color: var(--muted); font-size: 10px;
+  font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+}
+/* Подпись обычным моно, само значение — пиксельным и чуть светлее: тот же
+   приём, что у подписи «Uptime» рядом с крупным значением на референсе. */
+.service__label { font-family: var(--font-mono); color: var(--muted); }
+/* Оптическое выравнивание: пиксельный шрифт на 9px визуально выше
+   моноширинной подписи рядом — сдвигаем вниз, чтобы строка читалась ровно. */
+.service__value {
+  font-family: var(--font-pixel); color: var(--ink); font-size: 9px;
+  position: relative; top: 1px;
+}
+
+/* Перестроение по принципу референса: сначала ужимаем колонки,
+   на 780 переходим в одну колонку потоком. */
+@media (max-width: 1120px) {
+  .grid { grid-template-columns: minmax(0, 1fr) minmax(390px, 1fr); gap: 14px 18px; padding: 16px; }
+  .activity__metrics { grid-template-columns: 1fr; gap: 10px; }
+}
+
+@media (max-width: 780px) {
+  .grid { display: flex; flex-direction: column; gap: 12px; padding: 12px; }
+  /* Квадрат съедал слишком много вертикали на телефоне. Горизонтальная
+     полоса высотой от вьюпорта (не константа — от 320 до 480px ширины
+     пропорция едет вместе с экраном) освобождает место под остальные
+     панели, которые на мобильном идут одна под другой. Сам рендер сцены
+     уже реагирует на смену пропорции контейнера через ResizeObserver
+     (см. main.ts) — camera/renderer пересчитываются сами, без object-fit. */
+  /* min-height:320px у desktop-правила выше иначе перебивает эту высоту —
+     min-height всегда побеждает над height, если он больше. */
+  .zone--stage { aspect-ratio: auto; height: clamp(115px, 36vw, 175px); min-height: 0; }
+  .metric__value { font-size: 24px; }
+  .top { padding: 12px 16px; }
+  /* На узких телефонах CASHBACKFLY при десктопном кегле 28px не влезает
+     в строку рядом с лого Пэй и вылезает за край экрана (проверено
+     измерением: правый край FLY на 17px шире вьюпорта при 390px). */
+  .brand { font-size: 16px; }
+  .brand__icon { width: 26px; margin-right: 8px; }
+  .partner__logo { height: 26px; }
+
+  /* 12 категорий подряд вниз — долго листать на телефоне. Раскладка в две
+     колонки через column-count: браузер сам заполняет сначала левую
+     (пункты 1–6), потом правую (7–12) — ровно «6 слева / 6 справа», без
+     ручной пересборки списка на JS. column-rule рисует линию между ними
+     тем же цветом, что остальные разделители в интерфейсе. break-inside
+     запрещает разрезать одну строку категории между колонками. */
+  .cats { column-count: 2; column-gap: 14px; column-rule: 1px solid var(--line); }
+  .cats__card { padding: 4px 8px; }
+  .cat {
+    grid-template-columns: 22px 1fr 16px; gap: 8px; padding: 8px 2px;
+    break-inside: avoid;
+  }
+  .cat__icon { width: 22px; height: 22px; }
+  .cat__box { width: 16px; height: 16px; }
+  .cat__box svg { width: 10px; height: 10px; }
+  /* Мельче кегль под узкую колонку (~половина ширины панели минус иконка
+     и чекбокс) — иначе длинные названия («Кафе, бары и рестораны») почти
+     не оставляли места для текста. Сетка .cat всё равно гарантирует, что
+     текст не перекроет чекбокс: он всегда в своей колонке шириной 16px,
+     сколько бы строк ни занял заголовок. */
+  .cat__title { font-size: 11px; line-height: 1.3; }
+}
+
+/* --- табы панели комнаты --- */
+
+/*
+ * Заливка-пилюля для навигационной вкладки читалась как отдельная плавающая
+ * кнопка, а не как часть меню — «кнопка в воздухе». В реальных табах
+ * (см. пример: список задач с вкладками «Мои задачи»/«Мои команды») активная
+ * вкладка — это обычный текст с акцентным подчёркиванием, а под всей строкой
+ * идёт сплошная линия-разделитель, отделяющая шапку меню от содержимого —
+ * ровно это и даёт ощущение таблицы с видимой границей, без единой заливки.
+ *
+ * Заливка (`.interest[data-active]`, чекбоксы) остаётся: там она отмечает
+ * тег/статус внутри карточки, а не переключает раздел — это другая роль,
+ * и в референсе она тоже используется именно так.
+ */
+.room__tabs {
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  margin-bottom: 16px; padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.room__tab-btn {
+  margin: 0;
+}
+
+.toggle {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  text-align: left; line-height: 1.3;
+  transition: color 0.15s ease;
+}
+.toggle:hover:not([data-active]) { color: var(--ink); }
+/* Активная вкладка отмечается только цветом текста — серая линия под всей
+   строкой (.room__tabs/.help__tabs) уже отделяет меню от содержимого,
+   второе подчёркивание под самим словом было лишним. */
+.toggle[data-active] { color: var(--acid); }
+
+/* Внешние вкладки (имя мухи / «Как это работает») и внутренние («Бзззз» /
+   «На человеческом») — оба уровня одним и тем же заголовочным шрифтом:
+   это названия разделов, а не тело текста. Содержимое ПОД вкладками
+   (абзацы объяснений) остаётся обычным читаемым шрифтом — там от
+   пиксельных букв только устанешь читать три абзаца подряд. */
+.toggle--caps {
+  color: var(--muted); font-size: 9px; text-transform: uppercase;
+  letter-spacing: 0.02em; font-family: var(--font-pixel);
+}
+
+.toggle--body {
+  color: var(--muted); font-size: 9px; letter-spacing: 0.02em;
+  font-family: var(--font-pixel); line-height: 1.6;
+}
+
+.help__tabs {
+  display: flex; gap: 20px; margin-bottom: 14px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Тот же кегль, начертание и цвет, что у текста объяснений под заголовками
+   «На человеческом» — это тот же жанр подписи, просто на мушином языке,
+   а не отдельный крупный белый акцент. */
+.help__buzz-text {
+  margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55;
+  word-break: break-word;
+}
+
+/* Сплошной поток, без колонок: заголовок → текст на всю ширину →
+   следующий заголовок, один под другим. */
+.help__human { display: flex; flex-direction: column; gap: 18px; }
+.help__section-title {
+  color: var(--acid); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.02em; font-family: var(--font-pixel); margin-bottom: 6px;
+}
+.help__section-body {
+  /* Раньше max-width:72ch обрывал текст заметно раньше правого края формы,
+     оставляя пустую полосу справа. Теперь текст идёт до той же границы,
+     что и заголовок над ним, и что и «Бзззз» выше. */
+  margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55;
+}
+
+/* --- цветовой код выбора ---
+   Фиолетовый — категорию подтолкнул интерес, белый — муха взяла сама.
+   Сами правила закраски чекбокса — у .cat__box выше, здесь только легенда. */
+
+.room__legend { display: flex; gap: 16px; margin-top: 8px; }
+.legend__item {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--muted); font-size: 11px;
+}
+.legend__dot { width: 10px; height: 10px; border-radius: 3px; }
+.legend__dot[data-kind="boost"] { background: var(--acid); }
+.legend__dot[data-kind="own"] { background: #ffffff; }
+
+/* --- подвал --- */
+
+/* Межстрочный интервал — как у .room__explain (блок статуса «Отмечает»/
+   «Категории проходят через...»): та же пропорция кегль/интервал. */
+.credit {
+  margin: 0; text-align: center; line-height: 1.45;
+  color: var(--muted); font-size: 11px;
+}
+/* Разрыв на «Проект.../Поэтому...» — только для мобильной раскладки в три
+   строки (см. footer.ts); на десктопе фраза идёт одной строкой, как раньше. */
+.credit__mobile-break { display: none; }
+
+/* --- смена месяца --- */
+
+@keyframes cats-leave { to { transform: translateY(-16px); opacity: 0; } }
+@keyframes cats-enter { from { transform: translateY(-16px); opacity: 0; } }
+
+/* Уезжает и приезжает только список; строка «С вашей картой Пэй» остаётся
+   на месте — иначе смена месяца читается как перезагрузка страницы. */
+.cats__card[data-leaving] .cats { animation: cats-leave 0.42s ease forwards; }
+.cats__card[data-entering] .cats { animation: cats-enter 0.42s ease; }
+
+/*
+ * Скелет вместо подписи «Обновление категорий» по центру пустоты — так
+ * это делают реальные списки и ленты (GitHub, LinkedIn, Facebook): места
+ * будущих строк уже видны, форма совпадает с настоящим списком, поэтому
+ * карточка не «дышит» по высоте, и переливающийся градиент сам говорит
+ * «идёт загрузка» без отдельного текста.
+ */
+@keyframes skeleton-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+.cat--skeleton { pointer-events: none; }
+.cat__icon--skeleton,
+.cat__title--skeleton,
+.cat__box--skeleton {
+  background-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.12) 37%,
+    rgba(255, 255, 255, 0.05) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-shimmer 1.4s ease infinite;
+}
+.cat__title--skeleton {
+  height: 12px; width: 55%; border-radius: 4px; align-self: center;
+}
+
+/* --- нижняя зона --- */
+
+/* display у блоков ниже перебивает атрибут hidden, поэтому он задаётся явно:
+   иначе объяснение раскрыто с самого начала, хотя его никто не открывал. */
+[hidden] { display: none !important; }
+
+.bottom {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 120px;
+  max-width: 1680px; margin: 0 auto;
+  padding: 32px 32px 20px;
+}
+
+.actions { display: flex; gap: 10px; }
+.action {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 13px 20px; border-radius: 10px; cursor: pointer;
+  background: transparent; border: 1px solid var(--line); color: var(--ink);
+  font-family: var(--font-pixel); font-size: 9px; text-transform: uppercase;
+  letter-spacing: 0.02em; text-decoration: none;
+}
+.action:hover { border-color: var(--muted); }
+/* Это <a>: без outline:none браузер добавляет свой контур поверх нашей
+   заливки. Оставляем только смену состояния (filter), без обводки. */
+.action--primary { background: var(--acid); border-color: var(--acid); color: var(--bg); outline: none; }
+.action--primary:hover { filter: brightness(1.05); }
+
+/* Видно только скринридеру — стандартный паттерн, без затрагивания layout. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+/* Кастомная «Й»: у Press Start 2P её прописной глиф нарисован как строчная
+   (см. разбор в footer.ts) — берём «И» того же шрифта и дорисовываем
+   краткую через ::after. Всё в em от собственного шрифта буквы, не от
+   кнопки: масштабируется вместе с font-size на любом брейкпоинте
+   (сейчас у .action 9px на десктопе и 8px на мобильном — см. media),
+   без абсолютных пикселей и без привязки к ширине кнопки. */
+.custom-yi { position: relative; display: inline-block; }
+.custom-yi::after {
+  content: "";
+  position: absolute; left: 50%; top: -0.32em;
+  width: 0.42em; height: 0.09em;
+  background: currentColor; /* наследует цвет текста на hover/focus/disabled */
+  transform: translateX(-50%);
+}
+
+/* Тултип «Ссылка скопирована»: висит над кнопкой, не толкает раскладку —
+   position:absolute, а не вставка текста в поток. */
+.share { position: relative; }
+.share__tooltip {
+  position: absolute; bottom: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--panel); border: 1px solid var(--line);
+  color: var(--ink); font-size: 11px; white-space: nowrap;
+  padding: 6px 10px; border-radius: 8px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.share__tooltip[data-visible] { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+@media (max-width: 780px) {
+  /* Текст подвала отведён от кнопок в 3 раза дальше прежнего (было 20px) —
+     на мобильном экране блок с копирайтом не должен визуально жаться к
+     кнопкам действий. */
+  .bottom { gap: 60px; padding: 24px 20px 32px; }
+  .actions { width: 100%; }
+  .action, .share { flex: 1; }
+  .share .action { width: 100%; }
+  /* «Открыть карту Пэй» на узких экранах переносился на 2 строки, и кнопки
+     становились разной высоты — мельче кегль и уже боковой паддинг. */
+  .action { padding: 13px 6px; font-size: 8px; letter-spacing: 0; }
+  .top { flex-wrap: wrap; }
+  .credit__mobile-break { display: inline; }
+}

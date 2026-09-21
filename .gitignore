@@ -1,0 +1,35 @@
+# Коннектом MaleCNS v1.0 (~1,1 ГБ) и всё производное — никогда в git
+connectome_data/
+
+# Окружение
+.venv/
+node_modules/
+
+# Состояние воркера
+snapshots/
+checkpoints/
+
+# Локальные конфиги
+.env
+.env.local
+
+# Атомарная запись
+*.partial
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Прочее
+.DS_Store
+.idea/
+web/dist/
+
+# reports/ НЕ игнорируется: замеры этапов — это приложение к отчётам
+
+# Проприетарные шрифты кладёт заказчик локально; в репозиторий они не едут
+web/public/fonts/*.woff2
+web/public/fonts/*.woff
+web/public/fonts/*.ttf
+web/public/fonts/*.otf

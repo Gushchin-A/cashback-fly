@@ -1,0 +1,7 @@
+Press Start 2P (© Cody "CodeMan38" Boisclair, codeman38@gmail.com) и
+JetBrains Mono (© 2020 The JetBrains Mono Project Authors) распространяются
+под SIL Open Font License 1.1: https://scripts.sil.org/OFL
+
+Полный текст лицензии: https://openfontlicense.org
+Файлы скачаны с Google Fonts (fonts.google.com) в исходном виде,
+контуры не изменялись — переупакованы только в формат woff2.

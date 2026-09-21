@@ -1,0 +1,446 @@
+{
+  "comment": "id категории — вечный: из него детерминированно выводится паттерн стимуляции обонятельных нейронов. Менять id значит менять запах категории. Одна и та же категория в разных месяцах пахнет одинаково, меняется только процент. В месяце 12 категорий: длинный список растягивал страницу, а набор подобран так, чтобы каждый тег каждой комнаты встречался хотя бы в одном месяце.",
+  "tags": [
+    "авто",
+    "еда",
+    "еда-доставка",
+    "здоровье",
+    "игры",
+    "книги",
+    "кино",
+    "концерты",
+    "красота",
+    "культура",
+    "лавка",
+    "музыка",
+    "питомцы",
+    "подписка",
+    "путешествия",
+    "спорт",
+    "супермаркеты",
+    "транспорт",
+    "шопинг",
+    "ювелирные"
+  ],
+  "categories": {
+    "vse-pokupki": {
+      "title": "Все покупки",
+      "tags": []
+    },
+    "kafe": {
+      "title": "Кафе, бары и рестораны",
+      "tags": [
+        "еда"
+      ]
+    },
+    "supermarkety": {
+      "title": "Супермаркеты",
+      "tags": [
+        "супермаркеты",
+        "еда"
+      ]
+    },
+    "taksi": {
+      "title": "Яндекс Такси",
+      "tags": [
+        "транспорт"
+      ]
+    },
+    "eda-deliveri": {
+      "title": "Яндекс Еда",
+      "tags": [
+        "еда-доставка",
+        "еда"
+      ]
+    },
+    "zapravki": {
+      "title": "Яндекс Заправки",
+      "tags": [
+        "авто",
+        "транспорт"
+      ]
+    },
+    "plus": {
+      "title": "Яндекс Плюс",
+      "tags": [
+        "подписка"
+      ]
+    },
+    "samokaty": {
+      "title": "Самокаты Яндекс Go",
+      "tags": [
+        "транспорт"
+      ]
+    },
+    "puteshestviya": {
+      "title": "Яндекс Путешествия",
+      "tags": [
+        "путешествия"
+      ]
+    },
+    "krasota": {
+      "title": "Красота",
+      "tags": [
+        "красота"
+      ]
+    },
+    "knigi": {
+      "title": "Книги",
+      "tags": [
+        "книги"
+      ]
+    },
+    "market": {
+      "title": "Яндекс Маркет",
+      "tags": [
+        "шопинг"
+      ]
+    },
+    "kinoteatry": {
+      "title": "Онлайн-кинотеатры",
+      "tags": [
+        "кино",
+        "подписка"
+      ]
+    },
+    "gorodskoy-transport": {
+      "title": "Городской транспорт",
+      "tags": [
+        "транспорт"
+      ]
+    },
+    "apteki": {
+      "title": "Аптеки",
+      "tags": [
+        "здоровье"
+      ]
+    },
+    "cvety": {
+      "title": "Цветы",
+      "tags": [
+        "шопинг"
+      ]
+    },
+    "sporttovary": {
+      "title": "Спортивные товары",
+      "tags": [
+        "спорт"
+      ]
+    },
+    "lavka": {
+      "title": "Яндекс Лавка",
+      "tags": [
+        "лавка",
+        "супермаркеты"
+      ]
+    },
+    "muzyka-koncerty": {
+      "title": "Яндекс Музыка",
+      "tags": [
+        "концерты",
+        "музыка"
+      ]
+    },
+    "kinopoisk": {
+      "title": "Кинопоиск",
+      "tags": [
+        "кино"
+      ]
+    },
+    "pitomcy": {
+      "title": "Питомцы",
+      "tags": [
+        "питомцы"
+      ]
+    },
+    "odezhda": {
+      "title": "Одежда и обувь",
+      "tags": [
+        "шопинг"
+      ]
+    },
+    "oplata-telefonom": {
+      "title": "Оплата телефоном",
+      "tags": []
+    },
+    "drive": {
+      "title": "Яндекс Драйв",
+      "tags": [
+        "авто",
+        "транспорт"
+      ]
+    },
+    "afisha": {
+      "title": "Яндекс Афиша",
+      "tags": [
+        "культура",
+        "концерты"
+      ]
+    },
+    "igry": {
+      "title": "Игры",
+      "tags": [
+        "игры"
+      ]
+    },
+    "yuvelirnye": {
+      "title": "Ювелирные украшения",
+      "tags": [
+        "ювелирные",
+        "шопинг"
+      ]
+    },
+    "muzei-vystavki": {
+      "title": "Музеи и выставки",
+      "tags": [
+        "культура"
+      ]
+    },
+    "oplata-qr": {
+      "title": "Оплата по QR",
+      "tags": []
+    },
+    "drugie-servisy": {
+      "title": "Другие сервисы Яндекса",
+      "tags": []
+    }
+  },
+  "months": [
+    {
+      "id": "sentyabr",
+      "title": "Сентябрь",
+      "offers": [
+        {
+          "category": "vse-pokupki",
+          "rate": 3,
+          "note": "Включая сервисы Яндекса"
+        },
+        {
+          "category": "kafe",
+          "rate": 5
+        },
+        {
+          "category": "supermarkety",
+          "rate": 5
+        },
+        {
+          "category": "eda-deliveri",
+          "rate": 100,
+          "note": "Скидка на доставку"
+        },
+        {
+          "category": "taksi",
+          "rate": 5,
+          "note": "Кешбэк за поездки в тарифах Комфорт, Комфорт+ и Ultima"
+        },
+        {
+          "category": "plus",
+          "rate": 50,
+          "note": "Нужно активировать автопополнение карты Пэй"
+        },
+        {
+          "category": "kinoteatry",
+          "rate": 100
+        },
+        {
+          "category": "knigi",
+          "rate": 10
+        },
+        {
+          "category": "market",
+          "rate": 40,
+          "note": "Скидки до"
+        },
+        {
+          "category": "puteshestviya",
+          "rate": 5
+        },
+        {
+          "category": "apteki",
+          "rate": 7
+        },
+        {
+          "category": "sporttovary",
+          "rate": 5
+        }
+      ]
+    },
+    {
+      "id": "oktyabr",
+      "title": "Октябрь",
+      "offers": [
+        {
+          "category": "vse-pokupki",
+          "rate": 2,
+          "note": "Включая сервисы Яндекса"
+        },
+        {
+          "category": "kafe",
+          "rate": 7
+        },
+        {
+          "category": "supermarkety",
+          "rate": 3
+        },
+        {
+          "category": "lavka",
+          "rate": 5
+        },
+        {
+          "category": "taksi",
+          "rate": 20,
+          "note": "Кешбэк за поездки в тарифах Комфорт, Комфорт+ и Ultima"
+        },
+        {
+          "category": "plus",
+          "rate": 100,
+          "note": "Мультиподписка на месяц"
+        },
+        {
+          "category": "muzyka-koncerty",
+          "rate": 15,
+          "note": "Билеты на концерты"
+        },
+        {
+          "category": "kinopoisk",
+          "rate": 10,
+          "note": "Билеты в кино"
+        },
+        {
+          "category": "knigi",
+          "rate": 20
+        },
+        {
+          "category": "pitomcy",
+          "rate": 7,
+          "note": "Зоомагазины и ветклиники"
+        },
+        {
+          "category": "odezhda",
+          "rate": 5
+        },
+        {
+          "category": "gorodskoy-transport",
+          "rate": 20
+        }
+      ]
+    },
+    {
+      "id": "noyabr",
+      "title": "Ноябрь",
+      "offers": [
+        {
+          "category": "vse-pokupki",
+          "rate": 3,
+          "note": "Включая сервисы Яндекса"
+        },
+        {
+          "category": "kafe",
+          "rate": 5
+        },
+        {
+          "category": "supermarkety",
+          "rate": 7
+        },
+        {
+          "category": "drive",
+          "rate": 3
+        },
+        {
+          "category": "samokaty",
+          "rate": 10
+        },
+        {
+          "category": "plus",
+          "rate": 30,
+          "note": "Выберите 1 категорию"
+        },
+        {
+          "category": "afisha",
+          "rate": 10,
+          "note": "Билеты на мероприятия"
+        },
+        {
+          "category": "kinoteatry",
+          "rate": 100
+        },
+        {
+          "category": "igry",
+          "rate": 10
+        },
+        {
+          "category": "krasota",
+          "rate": 5
+        },
+        {
+          "category": "cvety",
+          "rate": 10
+        },
+        {
+          "category": "muzei-vystavki",
+          "rate": 10
+        }
+      ]
+    },
+    {
+      "id": "dekabr",
+      "title": "Декабрь",
+      "offers": [
+        {
+          "category": "vse-pokupki",
+          "rate": 3,
+          "note": "Включая сервисы Яндекса"
+        },
+        {
+          "category": "kafe",
+          "rate": 10
+        },
+        {
+          "category": "supermarkety",
+          "rate": 5
+        },
+        {
+          "category": "yuvelirnye",
+          "rate": 15
+        },
+        {
+          "category": "cvety",
+          "rate": 15
+        },
+        {
+          "category": "afisha",
+          "rate": 10,
+          "note": "Билеты на мероприятия"
+        },
+        {
+          "category": "market",
+          "rate": 50,
+          "note": "Скидки до"
+        },
+        {
+          "category": "plus",
+          "rate": 40,
+          "note": "Активируйте подписку до конца месяца"
+        },
+        {
+          "category": "kinopoisk",
+          "rate": 15,
+          "note": "Билеты в кино"
+        },
+        {
+          "category": "taksi",
+          "rate": 10,
+          "note": "Кешбэк за поездки в тарифах Комфорт, Комфорт+ и Ultima"
+        },
+        {
+          "category": "puteshestviya",
+          "rate": 7
+        },
+        {
+          "category": "apteki",
+          "rate": 7
+        }
+      ]
+    }
+  ]
+}

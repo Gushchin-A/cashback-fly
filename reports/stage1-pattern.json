@@ -1,0 +1,50 @@
+{
+  "month": "sentyabr",
+  "categories": [
+    "vse-pokupki",
+    "kafe",
+    "supermarkety",
+    "taksi",
+    "eda-deliveri",
+    "zapravki"
+  ],
+  "repeats": 4,
+  "windows": [
+    {
+      "window_ms": 50.0,
+      "baseline_hz": 0.0,
+      "stimulated_hz": 7.876,
+      "stimulus_effect_hz": 7.876,
+      "active_decision_cells": 193.2,
+      "pool_size": 1314,
+      "within_odor_corr": 0.9142,
+      "between_odor_corr": 0.9149,
+      "separation": -0.0007,
+      "seconds": 3.7
+    },
+    {
+      "window_ms": 200.0,
+      "baseline_hz": 8.152,
+      "stimulated_hz": 8.066,
+      "stimulus_effect_hz": -0.086,
+      "active_decision_cells": 262.8,
+      "pool_size": 1314,
+      "within_odor_corr": 0.9731,
+      "between_odor_corr": 0.97,
+      "separation": 0.003,
+      "seconds": 17.3
+    },
+    {
+      "window_ms": 500.0,
+      "baseline_hz": 8.488,
+      "stimulated_hz": 8.186,
+      "stimulus_effect_hz": -0.302,
+      "active_decision_cells": 298.3,
+      "pool_size": 1314,
+      "within_odor_corr": 0.9928,
+      "between_odor_corr": 0.9888,
+      "separation": 0.0041,
+      "seconds": 45.0
+    }
+  ]
+}

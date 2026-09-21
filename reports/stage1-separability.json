@@ -1,0 +1,99 @@
+{
+  "month": "sentyabr",
+  "repeats": 8,
+  "window_ms": 50.0,
+  "decision_pool_size": 1314,
+  "f_ratio_between_over_within": 0.12,
+  "drift_correlation_with_position": 0.196,
+  "rank_stability_spearman": 0.01,
+  "overall_mean_hz": 8.012,
+  "spread_between_categories_hz": 0.16,
+  "typical_within_category_sd_hz": 0.46,
+  "per_category": [
+    {
+      "category": "supermarkety",
+      "mean_hz": 8.276,
+      "sd_hz": 0.255
+    },
+    {
+      "category": "krasota",
+      "mean_hz": 8.196,
+      "sd_hz": 0.388
+    },
+    {
+      "category": "samokaty",
+      "mean_hz": 8.174,
+      "sd_hz": 0.449
+    },
+    {
+      "category": "cvety",
+      "mean_hz": 8.16,
+      "sd_hz": 0.437
+    },
+    {
+      "category": "plus",
+      "mean_hz": 8.105,
+      "sd_hz": 0.414
+    },
+    {
+      "category": "taksi",
+      "mean_hz": 8.084,
+      "sd_hz": 0.176
+    },
+    {
+      "category": "apteki",
+      "mean_hz": 8.057,
+      "sd_hz": 0.268
+    },
+    {
+      "category": "market",
+      "mean_hz": 8.021,
+      "sd_hz": 0.439
+    },
+    {
+      "category": "kinoteatry",
+      "mean_hz": 8.01,
+      "sd_hz": 0.345
+    },
+    {
+      "category": "vse-pokupki",
+      "mean_hz": 8.01,
+      "sd_hz": 0.229
+    },
+    {
+      "category": "knigi",
+      "mean_hz": 7.966,
+      "sd_hz": 0.538
+    },
+    {
+      "category": "puteshestviya",
+      "mean_hz": 7.962,
+      "sd_hz": 0.571
+    },
+    {
+      "category": "zapravki",
+      "mean_hz": 7.947,
+      "sd_hz": 0.226
+    },
+    {
+      "category": "eda-deliveri",
+      "mean_hz": 7.938,
+      "sd_hz": 0.42
+    },
+    {
+      "category": "kafe",
+      "mean_hz": 7.869,
+      "sd_hz": 0.45
+    },
+    {
+      "category": "sporttovary",
+      "mean_hz": 7.842,
+      "sd_hz": 0.377
+    },
+    {
+      "category": "gorodskoy-transport",
+      "mean_hz": 7.588,
+      "sd_hz": 1.077
+    }
+  ]
+}

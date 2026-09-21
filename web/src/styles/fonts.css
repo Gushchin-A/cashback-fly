@@ -1,0 +1,50 @@
+/*
+ * Press Start 2P и JetBrains Mono — свободные шрифты (SIL OFL), скачаны с
+ * Google Fonts в исходном виде и переупакованы только в woff2, контуры не
+ * менялись. Лицензия лежит рядом: web/public/fonts/free/LICENSE-OFL.txt.
+ * Кириллица проверена не по описанию, а по самим файлам — cmap содержит
+ * все 66 букв А–Я/а–я включая «ё» у обоих (в отличие от Press Start 2P,
+ * про который до проверки ходило подозрение, что кириллицы там нет вовсе).
+ *
+ * Роли: пиксельный — заголовки блоков, вкладки, кнопки и крупные числовые
+ * значения (герцы, спайки, аптайм); моноширинный технический — обычный
+ * читаемый текст, служебные подписи и единицы измерения рядом с числами.
+ */
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("/fonts/free/PressStart2P-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/free/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/free/JetBrainsMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/free/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Читаемый текст и служебные подписи. Запасные — если файлы не доехали
+     на сервер. */
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  /* Заголовки, вкладки, кнопки, крупные числа. */
+  --font-pixel: "Press Start 2P", var(--font-mono);
+}

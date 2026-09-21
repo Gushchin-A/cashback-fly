@@ -1,0 +1,5 @@
+{
+  "comment": "Правится прямо на сервере, без пересборки фронтенда — как web/public/icons/index.json. Ссылки/параметры интерфейса живут тут; тайминги самой симуляции (скорость выбора, паузы) — отдельно, в config/simulation.json на воркере.",
+  "payUrl": "https://bank.yandex.ru/_pay/login?product=card",
+  "shareUrl": "https://cashbackfly.bz"
+}

@@ -1,0 +1,202 @@
+{
+  "host": {
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "machine": "arm64",
+    "cpu": "Apple M4",
+    "cores": 10,
+    "ram_gb": 25.8,
+    "python": "3.11.16",
+    "numpy": "2.4.6"
+  },
+  "settings": {
+    "rooms": 5,
+    "neural_ms_per_step": 50.0,
+    "repeats": 6
+  },
+  "graph": {
+    "neurons": 166700,
+    "directed_edges": 25582938,
+    "load_seconds": 0.92,
+    "wiring_mb_by_array": {
+      "ptr": 1.33,
+      "post": 102.33,
+      "weight": 102.33,
+      "ids": 1.33,
+      "retina": 0.01,
+      "uv": 0.03,
+      "lamina": 0.03,
+      "sugar": 0.0,
+      "superclass": 42.68
+    },
+    "wiring_mb_total": 250.1,
+    "state_mb_by_array": {
+      "v": 0.67,
+      "g": 0.67,
+      "drive": 0.67,
+      "previous_drive": 0.67,
+      "refractory": 0.33,
+      "queue": 12.67,
+      "queue_count": 0.0,
+      "counts": 0.67,
+      "luminance": 0.01,
+      "active": 0.67,
+      "active_flag": 0.17,
+      "last": 1.33,
+      "eligibility": 1.33,
+      "eligibility_last": 1.33,
+      "modulation": 0.67,
+      "modulation_last": 1.33,
+      "adaptation": 0.67,
+      "rest": 0.67,
+      "modulation_mask": 0.17,
+      "tonic": 0.67,
+      "rate_kc": 0.06,
+      "rate_dan": 0.0,
+      "memory_u": 0.06,
+      "memory_w": 0.06
+    },
+    "state_mb_total": 25.6,
+    "initial_snapshot_mb": 24.0,
+    "rss_after_first_brain_mb": 848.7,
+    "rss_growth_per_extra_room_mb": [
+      224.2,
+      308.1,
+      295.1,
+      244.6
+    ],
+    "rss_all_rooms_mb": 1900.3,
+    "rss_final_mb": 1097.0
+  },
+  "throughput": {
+    "idle": {
+      "spikes_per_step_one_state": 0,
+      "one_state": {
+        "median_seconds": 0.0042,
+        "min_seconds": 0.0041,
+        "max_seconds": 0.0043,
+        "realtime_factor": 11.793,
+        "neural_ms_per_wall_second": 11793.3
+      },
+      "5_states_sequential": {
+        "median_seconds": 0.0214,
+        "min_seconds": 0.0202,
+        "max_seconds": 0.0248,
+        "realtime_factor": 2.337,
+        "neural_ms_per_wall_second": 11686.5
+      },
+      "5_states_threaded": {
+        "median_seconds": 0.0092,
+        "min_seconds": 0.0086,
+        "max_seconds": 0.0098,
+        "realtime_factor": 5.443,
+        "neural_ms_per_wall_second": 27213.8
+      },
+      "thread_speedup": 2.33,
+      "neural_ms_per_room_per_30s_cycle": 163283.1
+    },
+    "stim-128": {
+      "spikes_per_step_one_state": 27040,
+      "one_state": {
+        "median_seconds": 0.1461,
+        "min_seconds": 0.023,
+        "max_seconds": 0.1479,
+        "realtime_factor": 0.342,
+        "neural_ms_per_wall_second": 342.3
+      },
+      "5_states_sequential": {
+        "median_seconds": 0.6072,
+        "min_seconds": 0.2465,
+        "max_seconds": 0.6741,
+        "realtime_factor": 0.082,
+        "neural_ms_per_wall_second": 411.8
+      },
+      "5_states_threaded": {
+        "median_seconds": 0.2458,
+        "min_seconds": 0.2392,
+        "max_seconds": 0.2491,
+        "realtime_factor": 0.203,
+        "neural_ms_per_wall_second": 1017.1
+      },
+      "thread_speedup": 2.47,
+      "neural_ms_per_room_per_30s_cycle": 6102.4
+    },
+    "stim-512": {
+      "spikes_per_step_one_state": 27939,
+      "one_state": {
+        "median_seconds": 0.1574,
+        "min_seconds": 0.1515,
+        "max_seconds": 0.1684,
+        "realtime_factor": 0.318,
+        "neural_ms_per_wall_second": 317.7
+      },
+      "5_states_sequential": {
+        "median_seconds": 0.8243,
+        "min_seconds": 0.7423,
+        "max_seconds": 0.8315,
+        "realtime_factor": 0.061,
+        "neural_ms_per_wall_second": 303.3
+      },
+      "5_states_threaded": {
+        "median_seconds": 0.3049,
+        "min_seconds": 0.3023,
+        "max_seconds": 0.3165,
+        "realtime_factor": 0.164,
+        "neural_ms_per_wall_second": 820.0
+      },
+      "thread_speedup": 2.7,
+      "neural_ms_per_room_per_30s_cycle": 4919.7
+    },
+    "stim-2000": {
+      "spikes_per_step_one_state": 37508,
+      "one_state": {
+        "median_seconds": 0.1936,
+        "min_seconds": 0.1891,
+        "max_seconds": 0.1996,
+        "realtime_factor": 0.258,
+        "neural_ms_per_wall_second": 258.3
+      },
+      "5_states_sequential": {
+        "median_seconds": 0.9851,
+        "min_seconds": 0.9681,
+        "max_seconds": 1.0325,
+        "realtime_factor": 0.051,
+        "neural_ms_per_wall_second": 253.8
+      },
+      "5_states_threaded": {
+        "median_seconds": 0.4445,
+        "min_seconds": 0.3907,
+        "max_seconds": 0.5662,
+        "realtime_factor": 0.112,
+        "neural_ms_per_wall_second": 562.5
+      },
+      "thread_speedup": 2.22,
+      "neural_ms_per_room_per_30s_cycle": 3374.7
+    },
+    "visual": {
+      "spikes_per_step_one_state": 66232,
+      "one_state": {
+        "median_seconds": 0.2206,
+        "min_seconds": 0.2151,
+        "max_seconds": 0.2715,
+        "realtime_factor": 0.227,
+        "neural_ms_per_wall_second": 226.6
+      },
+      "5_states_sequential": {
+        "median_seconds": 1.0918,
+        "min_seconds": 1.0747,
+        "max_seconds": 1.1237,
+        "realtime_factor": 0.046,
+        "neural_ms_per_wall_second": 229.0
+      },
+      "5_states_threaded": {
+        "median_seconds": 0.3989,
+        "min_seconds": 0.3915,
+        "max_seconds": 0.4596,
+        "realtime_factor": 0.125,
+        "neural_ms_per_wall_second": 626.7
+      },
+      "thread_speedup": 2.74,
+      "neural_ms_per_room_per_30s_cycle": 3760.4
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "repeats": 10,
+  "rows": [
+    {
+      "window_ms": 100.0,
+      "pool": "MBON",
+      "cells": 97,
+      "anova_f": 4.26,
+      "rank_stability": 0.782,
+      "wall_seconds_per_window": 0.321
+    },
+    {
+      "window_ms": 100.0,
+      "pool": "боковой рог",
+      "cells": 2028,
+      "anova_f": 5.25,
+      "rank_stability": 0.681,
+      "wall_seconds_per_window": 0.321
+    },
+    {
+      "window_ms": 100.0,
+      "pool": "нисходящие",
+      "cells": 1314,
+      "anova_f": 5.1,
+      "rank_stability": 0.762,
+      "wall_seconds_per_window": 0.321
+    },
+    {
+      "window_ms": 200.0,
+      "pool": "MBON",
+      "cells": 97,
+      "anova_f": 6.3,
+      "rank_stability": 0.645,
+      "wall_seconds_per_window": 0.652
+    },
+    {
+      "window_ms": 200.0,
+      "pool": "боковой рог",
+      "cells": 2028,
+      "anova_f": 68.54,
+      "rank_stability": 0.944,
+      "wall_seconds_per_window": 0.652
+    },
+    {
+      "window_ms": 200.0,
+      "pool": "нисходящие",
+      "cells": 1314,
+      "anova_f": 7.4,
+      "rank_stability": 0.897,
+      "wall_seconds_per_window": 0.652
+    },
+    {
+      "window_ms": 400.0,
+      "pool": "MBON",
+      "cells": 97,
+      "anova_f": 13.54,
+      "rank_stability": 0.824,
+      "wall_seconds_per_window": 1.313
+    },
+    {
+      "window_ms": 400.0,
+      "pool": "боковой рог",
+      "cells": 2028,
+      "anova_f": 116.65,
+      "rank_stability": 0.968,
+      "wall_seconds_per_window": 1.313
+    },
+    {
+      "window_ms": 400.0,
+      "pool": "нисходящие",
+      "cells": 1314,
+      "anova_f": 15.17,
+      "rank_stability": 0.76,
+      "wall_seconds_per_window": 1.313
+    }
+  ],
+  "windows_per_cycle": 75,
+  "cycle_budget": [
+    {
+      "window_ms": 100.0,
+      "cycle_wall_seconds": 24.1
+    },
+    {
+      "window_ms": 200.0,
+      "cycle_wall_seconds": 48.9
+    },
+    {
+      "window_ms": 400.0,
+      "cycle_wall_seconds": 98.5
+    }
+  ]
+}
