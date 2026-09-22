@@ -43,14 +43,19 @@ def snapshot_path(root, room_id: str) -> Path:
     return Path(root) / "rooms" / room_id / "snapshot.json"
 
 
-def build(fb, state_id, room, *, phase, sequence, started_at, cycles_done):
-    """Собрать снимок из показаний модуля.
+def build(fb, state_id, room, *, readout, phase, sequence, started_at, cycles_done):
+    """Собрать снимок из уже готового показания.
 
     Здесь нет ни одного решения: всё, что касается выбора, берётся из
     `readout`. Задача снимка — переложить это в форму, удобную клиенту,
     и ничего не досочинить.
+
+    `readout` передаётся готовым (а не читается здесь через `fb.readout()`),
+    потому что вызывающая сторона (`Room.snapshot()`) снимает его копию под
+    локом сразу после шага симуляции — здесь, без лока, читать живое
+    состояние было бы гонкой с этим же шагом.
     """
-    r = fb.readout(state_id)
+    r = readout
     catalog = fb.categories["categories"]
     interests = fb.interests["interests"]
     month = fb.month(r.month) if r.month else None

@@ -42,13 +42,29 @@ class Room:
         self.cycles_done = 0
         self.pause_until = 0.0
         self.window_budget = 0.0
+        # Только для мутаций `_State` (step/start_month) — публикатор его не
+        # берёт вовсе, см. snapshot() и _refresh_readout().
         self.lock = threading.Lock()
+        # Копия последнего показания, всегда согласованная (readout() уже
+        # копирует все поля в обычные list/dict, живых ссылок на массивы
+        # состояния не остаётся) — публикатор читает её без лока.
+        self._readout = None
         self.checkpoint_dir = worker.state_root / config["id"]
 
+    def _refresh_readout(self):
+        """Скопировать показание сразу после мутации `_State`.
+
+        Вызывать только пока держишь self.lock — readout() читает те же
+        поля, которые step()/start_month() только что писали.
+        """
+        self._readout = self.w.fb.readout(self.sid)
+
     def restore_or_start(self):
+        # Однопоточный контекст (до старта потоков в Worker.run) — лок не нужен.
         fb = self.w.fb
         if fb.load_state(self.sid, self.checkpoint_dir):
             r = fb.readout(self.sid)
+            self._readout = r
             self.w.log(
                 f"{self.config['id']}: состояние восстановлено, "
                 f"месяц {r.month}, окон пройдено {r.windows_done}/{r.windows_total}"
@@ -58,6 +74,7 @@ class Room:
                 self.begin_pause()
             return
         fb.start_month(self.sid, fb.next_month())
+        self._refresh_readout()
         self.w.log(f"{self.config['id']}: начинаем с месяца {fb.next_month()}")
 
     def begin_pause(self):
@@ -71,9 +88,14 @@ class Room:
             remaining = self.pause_until - time.monotonic()
             if remaining > 0:
                 return min(remaining, 0.25)
-            # Пауза кончилась — следующий месяц в кольце.
-            current = fb.readout(self.sid).month
-            fb.start_month(self.sid, fb.next_month(current))
+            # Пауза кончилась — следующий месяц в кольце. start_month пишет
+            # сразу несколько полей `_State` не атомарно (порядок, расписание,
+            # рейтинги, ...) — публикатор не должен увидеть их наполовину
+            # обновлёнными, поэтому это тоже под локом, как и step().
+            with self.lock:
+                current = fb.readout(self.sid).month
+                fb.start_month(self.sid, fb.next_month(current))
+                self._refresh_readout()
             self.phase = "accumulating"
             self.window_budget = self.w.window_target(self.sid)
             return 0.0
@@ -85,11 +107,16 @@ class Room:
             self.phase = (
                 "revealing" if st.cursor >= len(st.schedule) else "accumulating"
             )
+            # Копия показания снимается сразу после шага, пока лок ещё держим:
+            # readout() сам по себе быстрый (копирует немного списков/словарей,
+            # не считает), поэтому публикатор ждёт только эту копию, а не
+            # весь fb.step() — см. _refresh_readout и snapshot() ниже.
+            self._refresh_readout()
         spent = time.monotonic() - started
 
         if fb.cycle_complete(self.sid):
             self.cycles_done += 1
-            r = fb.readout(self.sid)
+            r = self._readout
             picked = ", ".join(
                 fb.categories["categories"][c]["title"] for c in r.selected
             )
@@ -104,15 +131,29 @@ class Room:
         return max(0.0, self.window_budget - spent)
 
     def snapshot(self):
-        with self.lock:
-            self.sequence += 1
-            return build(
-                self.w.fb, self.sid, self.config,
-                phase=self.phase,
-                sequence=self.sequence,
-                started_at=self.w.started_at,
-                cycles_done=self.cycles_done,
-            )
+        """Публикатор больше не берёт self.lock вообще.
+
+        `self._readout` — уже независимая копия (readout() копирует все поля
+        в обычные list/dict, живых ссылок на массивы состояния не остаётся),
+        а `self.sequence`/`self.phase` мутирует только этот же поток
+        (run_room), поэтому читать их отсюда без лока безопасно. До этой
+        правки публикатор ждал на self.lock весь fb.step(), хотя реально ему
+        нужно было только уже скопированное показание — из-за этого шаг
+        симуляции мог надолго задержать запись снимка, и это была причина
+        подвисания UI при смене месяца на живом сервере.
+        """
+        self.sequence += 1
+        readout = self._readout
+        if readout is None:  # до первого шага теоретически возможно
+            readout = self.w.fb.readout(self.sid)
+        return build(
+            self.w.fb, self.sid, self.config,
+            readout=readout,
+            phase=self.phase,
+            sequence=self.sequence,
+            started_at=self.w.started_at,
+            cycles_done=self.cycles_done,
+        )
 
 
 class Worker:
