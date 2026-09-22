@@ -8,8 +8,9 @@
       name="description"
       content="Муху-дрозофилу научили выбирать категории кешбэка в Яндекс Пэй. Вот такие вот дела, собачка."
     />
-    <!-- Текст превью при шаринге ссылки (Телеграм/VK и т.п.). og:image не
-         задан — без него превью текстовое, без картинки. -->
+    <!-- Текст и картинка превью при шаринге ссылки (Телеграм/VK и т.п.).
+         URL картинки абсолютный — многие парсеры превью не резолвят
+         относительные og:image. -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cashbackfly.bz" />
     <meta property="og:title" content="CASHBACKFLY" />
@@ -17,12 +18,16 @@
       property="og:description"
       content="Муху-дрозофилу научили выбирать категории кешбэка в Яндекс Пэй. Вот такие вот дела, собачка."
     />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://cashbackfly.bz/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="CASHBACKFLY" />
     <meta
       name="twitter:description"
       content="Муху-дрозофилу научили выбирать категории кешбэка в Яндекс Пэй. Вот такие вот дела, собачка."
     />
+    <meta name="twitter:image" content="https://cashbackfly.bz/og-image.png" />
     <link rel="icon" type="image/svg+xml" href="/icons/fly-pixel.svg" />
     <!-- Отдельная растровая иконка (муха + название) — под системы, которые
          не берут SVG-фавикон для своих целей: превью в шторке «Поделиться»

@@ -76,12 +76,16 @@ export class Footer {
     // в media (см. base.css). Пробел перед «Поэтому» не рвёт десктопный
     // вид: в потоке текста он просто разделяет слова как обычно.
     const mobileBreak = el("br", "credit__mobile-break");
+    const repoLink = el("a", "credit__link", "GitHub: cashback-fly");
+    repoLink.href = "https://github.com/Gushchin-A/cashback-fly";
+    repoLink.target = "_blank";
+    repoLink.rel = "noopener noreferrer";
     credit.append(
       document.createTextNode("Проект навайбкожен смм-щиком!"),
       mobileBreak,
       document.createTextNode(" Поэтому не придирайтесь, плиз"),
       document.createElement("br"),
-      document.createTextNode("GitHub: cashback-fly"),
+      repoLink,
     );
 
     this.root.append(actions, credit);

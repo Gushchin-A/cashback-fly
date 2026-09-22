@@ -135,7 +135,9 @@ class App {
     this.renderSwitcher();
     const requested = roomFromLocation();
     const known = this.index.rooms.some((r) => r.id === requested);
-    this.select(known ? requested! : this.index.rooms[0]?.id);
+    // updateUrl только если комната и так была в адресе: молчаливый дефолт
+    // на первую комнату не должен дописывать ?room= в чистый URL.
+    this.select(known ? requested! : this.index.rooms[0]?.id, known);
   }
 
   /** Переключатель появляется сам, когда комнат становится больше одной. */
@@ -154,13 +156,13 @@ class App {
   }
 
   /** Смена комнаты — только другой URL снимка. На сервер ничего не уходит. */
-  private select(roomId: string | undefined) {
+  private select(roomId: string | undefined, updateUrl = true) {
     if (!roomId) {
       console.error("в индексе нет ни одной комнаты");
       return;
     }
     this.stopPolling?.();
-    setRoomInLocation(roomId);
+    if (updateUrl) setRoomInLocation(roomId);
     for (const button of this.switcher.querySelectorAll("button")) {
       button.toggleAttribute("data-current", button.dataset.id === roomId);
     }
