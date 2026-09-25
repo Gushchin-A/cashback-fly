@@ -70,22 +70,16 @@ export class Footer {
     actions.append(pay, shareWrap);
 
     const credit = el("p", "credit");
-    // Разрыв после «смм-щиком!» нужен только на мобильном (три строки
-    // вместо двух) — на десктопе фраза остаётся одной строкой, поэтому
+    // Разрыв после «смм-щиком!» нужен только на мобильном (две строки
+    // вместо одной) — на десктопе фраза остаётся одной строкой, поэтому
     // сам <br> скрыт по умолчанию и появляется через .credit__mobile-break
     // в media (см. base.css). Пробел перед «Поэтому» не рвёт десктопный
     // вид: в потоке текста он просто разделяет слова как обычно.
     const mobileBreak = el("br", "credit__mobile-break");
-    const repoLink = el("a", "credit__link", "GitHub: cashback-fly");
-    repoLink.href = "https://github.com/Gushchin-A/cashback-fly";
-    repoLink.target = "_blank";
-    repoLink.rel = "noopener noreferrer";
     credit.append(
       document.createTextNode("Проект навайбкожен смм-щиком!"),
       mobileBreak,
       document.createTextNode(" Поэтому не придирайтесь, плиз"),
-      document.createElement("br"),
-      repoLink,
     );
 
     this.root.append(actions, credit);

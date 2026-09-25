@@ -443,14 +443,9 @@ body {
   margin: 0; text-align: center; line-height: 1.45;
   color: var(--muted); font-size: 11px;
 }
-/* Разрыв на «Проект.../Поэтому...» — только для мобильной раскладки в три
+/* Разрыв на «Проект.../Поэтому...» — только для мобильной раскладки в две
    строки (см. footer.ts); на десктопе фраза идёт одной строкой, как раньше. */
 .credit__mobile-break { display: none; }
-/* Тот же приём, что у вкладок (.toggle): на hover меняется только цвет,
-   подчёркивания нет — ссылка не должна выглядеть «активнее» соседнего
-   текста подвала. */
-.credit__link { color: inherit; text-decoration: none; transition: color 0.15s ease; }
-.credit__link:hover { color: var(--ink); }
 
 /* --- смена месяца --- */
 
