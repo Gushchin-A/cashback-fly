@@ -167,7 +167,9 @@ Visual/genre inspiration only, no code taken:
 - **[FlyBrain](https://github.com/nftechie/FlyBrain)** — a connectome-driven
   video game boss; informed the "a real connectome, watched live" framing
   of this project, no code shared.
-- **stonkfly** and **FlyTok**'s public frontends were also used as visual
-  reference for the fly's 3D model and the dark, panel-based dashboard
-  layout — the geometry-building approach and motion envelope (fast attack,
-  slow decay) were observed and re-implemented independently, not copied.
+- **[stonkfly](https://github.com/nftechie/stonkfly)** and
+  **[FlyTok](https://github.com/FlyTokRH/Flytok)** public frontends were
+  also used as visual reference for the fly's 3D model and the dark,
+  panel-based dashboard layout — the geometry-building approach and motion
+  envelope (fast attack, slow decay) were observed and re-implemented
+  independently, not copied.
