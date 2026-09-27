@@ -1,0 +1,35 @@
+{
+  "comment": "Комнаты — параметр конфига, не константа кода. Воркер поднимает столько состояний, сколько здесь enabled: true. Сейчас включена одна; чтобы включить две, три или пять, достаточно переставить флаги — логика воркера и фронтенда не меняется.",
+  "rooms": [
+    {
+      "id": "obyknovennaya",
+      "enabled": true,
+      "title": "Муха Кешбэкариус обыкновенная",
+      "interests": ["frukty", "v_steklo", "drifting", "potiranie", "kino"]
+    },
+    {
+      "id": "kinomanka",
+      "enabled": false,
+      "title": "Киноманка",
+      "interests": ["kino", "prokrastinaciya", "rilsy", "igry", "nichegonedelanie"]
+    },
+    {
+      "id": "krasotka",
+      "enabled": false,
+      "title": "Красотка",
+      "interests": ["selfi", "meykap", "potiranie", "muzyka", "koncerty"]
+    },
+    {
+      "id": "razvivaetsya",
+      "enabled": false,
+      "title": "Развивается",
+      "interests": ["knigi", "samorazvitie", "muzei", "vystavki", "sport"]
+    },
+    {
+      "id": "gedonistka",
+      "enabled": false,
+      "title": "Гедонистка",
+      "interests": ["kulinariya", "frukty", "puteshestviya", "kotiki", "sobachki"]
+    }
+  ]
+}

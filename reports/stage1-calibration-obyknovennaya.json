@@ -1,0 +1,1146 @@
+{
+  "repeats": 6,
+  "rooms": [
+    "obyknovennaya"
+  ],
+  "months": [
+    "sentyabr",
+    "oktyabr",
+    "noyabr",
+    "dekabr"
+  ],
+  "sweep": [
+    {
+      "interest_gain": 1.0,
+      "cycles": 24,
+      "mean_boosted_in_top5": 1.83,
+      "mean_chance_baseline": 1.46,
+      "lift_over_chance": 0.37,
+      "mean_free_slots": 3.17,
+      "saturated_cycles": 0,
+      "reproducibility_jaccard": 0.641,
+      "identical_repeats_fraction": 0.017,
+      "across_room_jaccard": null,
+      "runs": [
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "knigi",
+            "supermarkety",
+            "apteki",
+            "vse-pokupki",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Книги",
+            "Супермаркеты",
+            "Аптеки",
+            "Все покупки",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "apteki",
+            "supermarkety",
+            "market",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Книги",
+            "Аптеки",
+            "Супермаркеты",
+            "Яндекс Маркет",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 2,
+          "selected": [
+            "knigi",
+            "apteki",
+            "supermarkety",
+            "vse-pokupki",
+            "market"
+          ],
+          "titles": [
+            "Книги",
+            "Аптеки",
+            "Супермаркеты",
+            "Все покупки",
+            "Яндекс Маркет"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 3,
+          "selected": [
+            "knigi",
+            "apteki",
+            "vse-pokupki",
+            "supermarkety",
+            "market"
+          ],
+          "titles": [
+            "Книги",
+            "Аптеки",
+            "Все покупки",
+            "Супермаркеты",
+            "Яндекс Маркет"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 4,
+          "selected": [
+            "supermarkety",
+            "knigi",
+            "vse-pokupki",
+            "apteki",
+            "market"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Книги",
+            "Все покупки",
+            "Аптеки",
+            "Яндекс Маркет"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 5,
+          "selected": [
+            "knigi",
+            "supermarkety",
+            "market",
+            "apteki",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Книги",
+            "Супермаркеты",
+            "Яндекс Маркет",
+            "Аптеки",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "knigi",
+            "pitomcy",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Книги",
+            "Питомцы",
+            "Все покупки"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "vse-pokupki",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Все покупки",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 2,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "supermarkety",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Питомцы"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 3,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "supermarkety",
+            "muzyka-koncerty"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Яндекс Музыка"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 4,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "supermarkety",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Питомцы"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 5,
+          "selected": [
+            "lavka",
+            "knigi",
+            "supermarkety",
+            "gorodskoy-transport",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Супермаркеты",
+            "Городской транспорт",
+            "Питомцы"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drive",
+            "krasota",
+            "igry",
+            "vse-pokupki",
+            "samokaty"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Красота",
+            "Игры",
+            "Все покупки",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drive",
+            "afisha",
+            "samokaty",
+            "krasota",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Яндекс Афиша",
+            "Самокаты Яндекс Go",
+            "Красота",
+            "Все покупки"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 2,
+          "selected": [
+            "drive",
+            "afisha",
+            "cvety",
+            "igry",
+            "samokaty"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Яндекс Афиша",
+            "Цветы",
+            "Игры",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 3,
+          "selected": [
+            "drive",
+            "igry",
+            "vse-pokupki",
+            "samokaty",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Игры",
+            "Все покупки",
+            "Самокаты Яндекс Go",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 4,
+          "selected": [
+            "drive",
+            "krasota",
+            "igry",
+            "samokaty",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Красота",
+            "Игры",
+            "Самокаты Яндекс Go",
+            "Все покупки"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 5,
+          "selected": [
+            "drive",
+            "afisha",
+            "supermarkety",
+            "igry",
+            "samokaty"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Яндекс Афиша",
+            "Супермаркеты",
+            "Игры",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 0,
+          "selected": [
+            "afisha",
+            "vse-pokupki",
+            "apteki",
+            "market",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Афиша",
+            "Все покупки",
+            "Аптеки",
+            "Яндекс Маркет",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 1,
+          "selected": [
+            "afisha",
+            "supermarkety",
+            "vse-pokupki",
+            "cvety",
+            "market"
+          ],
+          "titles": [
+            "Яндекс Афиша",
+            "Супермаркеты",
+            "Все покупки",
+            "Цветы",
+            "Яндекс Маркет"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 2,
+          "selected": [
+            "afisha",
+            "market",
+            "apteki",
+            "supermarkety",
+            "cvety"
+          ],
+          "titles": [
+            "Яндекс Афиша",
+            "Яндекс Маркет",
+            "Аптеки",
+            "Супермаркеты",
+            "Цветы"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 3,
+          "selected": [
+            "afisha",
+            "supermarkety",
+            "vse-pokupki",
+            "market",
+            "kinopoisk"
+          ],
+          "titles": [
+            "Яндекс Афиша",
+            "Супермаркеты",
+            "Все покупки",
+            "Яндекс Маркет",
+            "Кинопоиск"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 4,
+          "selected": [
+            "afisha",
+            "supermarkety",
+            "apteki",
+            "vse-pokupki",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Яндекс Афиша",
+            "Супермаркеты",
+            "Аптеки",
+            "Все покупки",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 5,
+          "selected": [
+            "vse-pokupki",
+            "cvety",
+            "puteshestviya",
+            "afisha",
+            "apteki"
+          ],
+          "titles": [
+            "Все покупки",
+            "Цветы",
+            "Яндекс Путешествия",
+            "Яндекс Афиша",
+            "Аптеки"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        }
+      ]
+    },
+    {
+      "interest_gain": 1.4,
+      "cycles": 24,
+      "mean_boosted_in_top5": 3.12,
+      "mean_chance_baseline": 1.46,
+      "lift_over_chance": 1.67,
+      "mean_free_slots": 1.88,
+      "saturated_cycles": 0,
+      "reproducibility_jaccard": 0.743,
+      "identical_repeats_fraction": 0.033,
+      "across_room_jaccard": null,
+      "runs": [
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "knigi",
+            "supermarkety",
+            "apteki",
+            "kinoteatry",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Книги",
+            "Супермаркеты",
+            "Аптеки",
+            "Онлайн-кинотеатры",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "supermarkety",
+            "knigi",
+            "kinoteatry",
+            "apteki",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Книги",
+            "Онлайн-кинотеатры",
+            "Аптеки",
+            "Все покупки"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 2,
+          "selected": [
+            "knigi",
+            "supermarkety",
+            "apteki",
+            "vse-pokupki",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Книги",
+            "Супермаркеты",
+            "Аптеки",
+            "Все покупки",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 3,
+          "selected": [
+            "supermarkety",
+            "knigi",
+            "apteki",
+            "kinoteatry",
+            "plus"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Книги",
+            "Аптеки",
+            "Онлайн-кинотеатры",
+            "Яндекс Плюс"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 4,
+          "selected": [
+            "supermarkety",
+            "knigi",
+            "apteki",
+            "kinoteatry",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Книги",
+            "Аптеки",
+            "Онлайн-кинотеатры",
+            "Все покупки"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 5,
+          "selected": [
+            "supermarkety",
+            "apteki",
+            "vse-pokupki",
+            "kinoteatry",
+            "knigi"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Аптеки",
+            "Все покупки",
+            "Онлайн-кинотеатры",
+            "Книги"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "kinopoisk",
+            "knigi",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Кинопоиск",
+            "Книги",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "knigi",
+            "kinopoisk",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Книги",
+            "Кинопоиск",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 2,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "kinopoisk",
+            "knigi",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Кинопоиск",
+            "Книги",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 3,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "kinopoisk",
+            "knigi",
+            "muzyka-koncerty"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Кинопоиск",
+            "Книги",
+            "Яндекс Музыка"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 4,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "knigi",
+            "gorodskoy-transport",
+            "kinopoisk"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Книги",
+            "Городской транспорт",
+            "Кинопоиск"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 5,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "kinopoisk",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Кинопоиск",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drive",
+            "krasota",
+            "supermarkety",
+            "samokaty",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Красота",
+            "Супермаркеты",
+            "Самокаты Яндекс Go",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drive",
+            "supermarkety",
+            "krasota",
+            "igry",
+            "samokaty"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Супермаркеты",
+            "Красота",
+            "Игры",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 2,
+          "selected": [
+            "drive",
+            "krasota",
+            "supermarkety",
+            "samokaty",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Красота",
+            "Супермаркеты",
+            "Самокаты Яндекс Go",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 3,
+          "selected": [
+            "drive",
+            "supermarkety",
+            "krasota",
+            "samokaty",
+            "igry"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Супермаркеты",
+            "Красота",
+            "Самокаты Яндекс Go",
+            "Игры"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 4,
+          "selected": [
+            "drive",
+            "supermarkety",
+            "krasota",
+            "samokaty",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Супермаркеты",
+            "Красота",
+            "Самокаты Яндекс Go",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 5,
+          "selected": [
+            "drive",
+            "krasota",
+            "supermarkety",
+            "igry",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Яндекс Драйв",
+            "Красота",
+            "Супермаркеты",
+            "Игры",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 4,
+          "offers": 12,
+          "chance_baseline": 1.67
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 0,
+          "selected": [
+            "supermarkety",
+            "apteki",
+            "kinopoisk",
+            "afisha",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Аптеки",
+            "Кинопоиск",
+            "Яндекс Афиша",
+            "Все покупки"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 1,
+          "selected": [
+            "supermarkety",
+            "puteshestviya",
+            "apteki",
+            "kinopoisk",
+            "cvety"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Яндекс Путешествия",
+            "Аптеки",
+            "Кинопоиск",
+            "Цветы"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 2,
+          "selected": [
+            "supermarkety",
+            "apteki",
+            "kinopoisk",
+            "cvety",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Аптеки",
+            "Кинопоиск",
+            "Цветы",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 3,
+          "selected": [
+            "supermarkety",
+            "kinopoisk",
+            "apteki",
+            "market",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Кинопоиск",
+            "Аптеки",
+            "Яндекс Маркет",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 4,
+          "selected": [
+            "kinopoisk",
+            "supermarkety",
+            "afisha",
+            "apteki",
+            "cvety"
+          ],
+          "titles": [
+            "Кинопоиск",
+            "Супермаркеты",
+            "Яндекс Афиша",
+            "Аптеки",
+            "Цветы"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "dekabr",
+          "repeat": 5,
+          "selected": [
+            "supermarkety",
+            "apteki",
+            "kinopoisk",
+            "vse-pokupki",
+            "cvety"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Аптеки",
+            "Кинопоиск",
+            "Все покупки",
+            "Цветы"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 3,
+          "offers": 12,
+          "chance_baseline": 1.25
+        }
+      ]
+    }
+  ]
+}

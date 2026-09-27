@@ -1,0 +1,59 @@
+{
+  "stim_ms": 100.0,
+  "probe_ms": 20.0,
+  "category": "knigi",
+  "decay": [
+    {
+      "gap_ms": 0.0,
+      "whole_graph_hz": 3.3842,
+      "decision_hz": 9.0944,
+      "gap_wall_seconds": 0.0,
+      "wall_ms_per_neural_second": 0.0
+    },
+    {
+      "gap_ms": 50.0,
+      "whole_graph_hz": 3.0684,
+      "decision_hz": 7.6865,
+      "gap_wall_seconds": 0.1493,
+      "wall_ms_per_neural_second": 2986.2
+    },
+    {
+      "gap_ms": 100.0,
+      "whole_graph_hz": 3.1035,
+      "decision_hz": 7.3059,
+      "gap_wall_seconds": 0.3012,
+      "wall_ms_per_neural_second": 3012.4
+    },
+    {
+      "gap_ms": 200.0,
+      "whole_graph_hz": 3.1038,
+      "decision_hz": 7.9148,
+      "gap_wall_seconds": 0.5935,
+      "wall_ms_per_neural_second": 2967.5
+    },
+    {
+      "gap_ms": 400.0,
+      "whole_graph_hz": 3.362,
+      "decision_hz": 8.7139,
+      "gap_wall_seconds": 1.196,
+      "wall_ms_per_neural_second": 2990.1
+    },
+    {
+      "gap_ms": 800.0,
+      "whole_graph_hz": 3.1269,
+      "decision_hz": 8.105,
+      "gap_wall_seconds": 2.4169,
+      "wall_ms_per_neural_second": 3021.2
+    },
+    {
+      "gap_ms": 1600.0,
+      "whole_graph_hz": 3.1719,
+      "decision_hz": 8.79,
+      "gap_wall_seconds": 4.8195,
+      "wall_ms_per_neural_second": 3012.2
+    }
+  ],
+  "stimulated_window_wall_seconds": 0.2401,
+  "stimulated_wall_ms_per_neural_second": 2400.8,
+  "recommended_gap_ms": null
+}

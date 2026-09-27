@@ -1,0 +1,40 @@
+{
+  "rooms": 5,
+  "wall_seconds": 30.16,
+  "neural_ms_per_step": 50.0,
+  "per_room": [
+    {
+      "room": 0,
+      "steps": 97,
+      "neural_ms": 4850.0,
+      "ms_per_step": 310.9
+    },
+    {
+      "room": 1,
+      "steps": 107,
+      "neural_ms": 5350.0,
+      "ms_per_step": 281.8
+    },
+    {
+      "room": 2,
+      "steps": 95,
+      "neural_ms": 4750.0,
+      "ms_per_step": 317.4
+    },
+    {
+      "room": 3,
+      "steps": 96,
+      "neural_ms": 4800.0,
+      "ms_per_step": 314.1
+    },
+    {
+      "room": 4,
+      "steps": 96,
+      "neural_ms": 4800.0,
+      "ms_per_step": 314.1
+    }
+  ],
+  "total_neural_ms_per_wall_second": 814.1,
+  "slowest_room_neural_ms_per_wall_second": 157.5,
+  "fastest_room_neural_ms_per_wall_second": 177.4
+}

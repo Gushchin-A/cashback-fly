@@ -1,0 +1,21 @@
+[project]
+name = "fly-cashback"
+version = "0.1.0"
+description = "A fly connectome (MaleCNS v1.0) picking cashback categories, live."
+requires-python = "==3.11.*"
+dependencies = [
+    "numpy==2.4.6",
+    "pandas==3.0.5",
+    "pyarrow==25.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+]
+
+[tool.uv]
+# Not a distributable package: neural/ and worker/ are run in place via
+# `python -m`, never pip-installed elsewhere. uv should only resolve and
+# sync dependencies, not try to build this project.
+package = false

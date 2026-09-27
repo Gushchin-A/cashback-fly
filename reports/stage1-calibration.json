@@ -1,0 +1,1420 @@
+{
+  "repeats": 2,
+  "rooms": [
+    "obyknovennaya",
+    "kinomanka",
+    "krasotka",
+    "razvivaetsya",
+    "gedonistka"
+  ],
+  "sweep": [
+    {
+      "interest_gain": 1.0,
+      "cycles": 30,
+      "mean_boosted_in_top5": 1.43,
+      "mean_chance_baseline": 1.61,
+      "lift_over_chance": -0.17,
+      "mean_free_slots": 3.57,
+      "saturated_cycles": 0,
+      "reproducibility_jaccard": 0.544,
+      "identical_repeats_fraction": 0.0,
+      "across_room_jaccard": 0.462,
+      "runs": [
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "knigi",
+            "krasota",
+            "vse-pokupki",
+            "gorodskoy-transport",
+            "supermarkety"
+          ],
+          "titles": [
+            "Книги",
+            "Красота",
+            "Все покупки",
+            "Городской транспорт",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 10,
+          "offers": 17,
+          "chance_baseline": 2.94
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "krasota",
+            "cvety",
+            "gorodskoy-transport",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Книги",
+            "Красота",
+            "Цветы",
+            "Городской транспорт",
+            "Все покупки"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 10,
+          "offers": 17,
+          "chance_baseline": 2.94
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "knigi",
+            "kinopoisk",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Книги",
+            "Кинопоиск",
+            "Питомцы"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 9,
+          "offers": 17,
+          "chance_baseline": 2.65
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "supermarkety",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Питомцы"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 9,
+          "offers": 17,
+          "chance_baseline": 2.65
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "oplata-qr",
+            "igry",
+            "krasota"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Оплата по QR",
+            "Игры",
+            "Красота"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "igry",
+            "samokaty",
+            "krasota"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Игры",
+            "Самокаты Яндекс Go",
+            "Красота"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "kinomanka",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "knigi",
+            "samokaty",
+            "gorodskoy-transport",
+            "apteki",
+            "cvety"
+          ],
+          "titles": [
+            "Книги",
+            "Самокаты Яндекс Go",
+            "Городской транспорт",
+            "Аптеки",
+            "Цветы"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "samokaty",
+            "krasota",
+            "apteki",
+            "supermarkety"
+          ],
+          "titles": [
+            "Книги",
+            "Самокаты Яндекс Go",
+            "Красота",
+            "Аптеки",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "knigi",
+            "supermarkety",
+            "gorodskoy-transport",
+            "market"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Супермаркеты",
+            "Городской транспорт",
+            "Яндекс Маркет"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "knigi",
+            "vse-pokupki",
+            "pitomcy",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Все покупки",
+            "Питомцы",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "oplata-qr",
+            "igry",
+            "supermarkety"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Оплата по QR",
+            "Игры",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 4,
+          "offers": 17,
+          "chance_baseline": 1.18
+        },
+        {
+          "room": "kinomanka",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "samokaty",
+            "supermarkety",
+            "igry"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Самокаты Яндекс Go",
+            "Супермаркеты",
+            "Игры"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 4,
+          "offers": 17,
+          "chance_baseline": 1.18
+        },
+        {
+          "room": "krasotka",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "gorodskoy-transport",
+            "supermarkety",
+            "krasota",
+            "cvety",
+            "samokaty"
+          ],
+          "titles": [
+            "Городской транспорт",
+            "Супермаркеты",
+            "Красота",
+            "Цветы",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "krasotka",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "gorodskoy-transport",
+            "cvety",
+            "supermarkety",
+            "samokaty"
+          ],
+          "titles": [
+            "Книги",
+            "Городской транспорт",
+            "Цветы",
+            "Супермаркеты",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "krasotka",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "knigi",
+            "vse-pokupki",
+            "apteki",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Все покупки",
+            "Аптеки",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 5,
+          "offers": 17,
+          "chance_baseline": 1.47
+        },
+        {
+          "room": "krasotka",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "knigi",
+            "oplata-telefonom",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Книги",
+            "Оплата телефоном",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 5,
+          "offers": 17,
+          "chance_baseline": 1.47
+        },
+        {
+          "room": "krasotka",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "oplata-qr",
+            "afisha",
+            "igry"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Оплата по QR",
+            "Яндекс Афиша",
+            "Игры"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "krasotka",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "oplata-qr",
+            "samokaty",
+            "krasota"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Оплата по QR",
+            "Самокаты Яндекс Go",
+            "Красота"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "knigi",
+            "gorodskoy-transport",
+            "samokaty",
+            "krasota",
+            "apteki"
+          ],
+          "titles": [
+            "Книги",
+            "Городской транспорт",
+            "Самокаты Яндекс Go",
+            "Красота",
+            "Аптеки"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "samokaty",
+            "gorodskoy-transport",
+            "krasota",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Книги",
+            "Самокаты Яндекс Go",
+            "Городской транспорт",
+            "Красота",
+            "Все покупки"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "knigi",
+            "vse-pokupki",
+            "gorodskoy-transport",
+            "oplata-telefonom"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Все покупки",
+            "Городской транспорт",
+            "Оплата телефоном"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "knigi",
+            "pitomcy",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Книги",
+            "Питомцы",
+            "Все покупки"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "krasota",
+            "oplata-qr",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Красота",
+            "Оплата по QR",
+            "Все покупки"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 2,
+          "offers": 17,
+          "chance_baseline": 0.59
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "igry",
+            "krasota",
+            "samokaty"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Игры",
+            "Красота",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 0,
+          "eligible": 2,
+          "offers": 17,
+          "chance_baseline": 0.59
+        },
+        {
+          "room": "gedonistka",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "gorodskoy-transport",
+            "samokaty",
+            "cvety",
+            "vse-pokupki",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Городской транспорт",
+            "Самокаты Яндекс Go",
+            "Цветы",
+            "Все покупки",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 8,
+          "offers": 17,
+          "chance_baseline": 2.35
+        },
+        {
+          "room": "gedonistka",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "krasota",
+            "vse-pokupki",
+            "gorodskoy-transport",
+            "supermarkety"
+          ],
+          "titles": [
+            "Книги",
+            "Красота",
+            "Все покупки",
+            "Городской транспорт",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 8,
+          "offers": 17,
+          "chance_baseline": 2.35
+        },
+        {
+          "room": "gedonistka",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "knigi",
+            "gorodskoy-transport",
+            "supermarkety",
+            "oplata-telefonom"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Оплата телефоном"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "gedonistka",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "knigi",
+            "supermarkety",
+            "gorodskoy-transport",
+            "muzyka-koncerty"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Супермаркеты",
+            "Городской транспорт",
+            "Яндекс Музыка"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "gedonistka",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "supermarkety",
+            "samokaty",
+            "afisha"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Супермаркеты",
+            "Самокаты Яндекс Go",
+            "Яндекс Афиша"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "gedonistka",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "igry",
+            "krasota",
+            "afisha"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Игры",
+            "Красота",
+            "Яндекс Афиша"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        }
+      ]
+    },
+    {
+      "interest_gain": 1.4,
+      "cycles": 30,
+      "mean_boosted_in_top5": 2.6,
+      "mean_chance_baseline": 1.61,
+      "lift_over_chance": 0.99,
+      "mean_free_slots": 2.4,
+      "saturated_cycles": 0,
+      "reproducibility_jaccard": 0.652,
+      "identical_repeats_fraction": 0.0,
+      "across_room_jaccard": 0.467,
+      "runs": [
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "gorodskoy-transport",
+            "knigi",
+            "samokaty",
+            "supermarkety",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Городской транспорт",
+            "Книги",
+            "Самокаты Яндекс Go",
+            "Супермаркеты",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 10,
+          "offers": 17,
+          "chance_baseline": 2.94
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "gorodskoy-transport",
+            "supermarkety",
+            "samokaty",
+            "knigi",
+            "apteki"
+          ],
+          "titles": [
+            "Городской транспорт",
+            "Супермаркеты",
+            "Самокаты Яндекс Go",
+            "Книги",
+            "Аптеки"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 10,
+          "offers": 17,
+          "chance_baseline": 2.94
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "gorodskoy-transport",
+            "pitomcy",
+            "knigi"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Городской транспорт",
+            "Питомцы",
+            "Книги"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 9,
+          "offers": 17,
+          "chance_baseline": 2.65
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "supermarkety",
+            "knigi",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Книги",
+            "Питомцы"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 9,
+          "offers": 17,
+          "chance_baseline": 2.65
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "samokaty",
+            "supermarkety",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Самокаты Яндекс Go",
+            "Супермаркеты",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "obyknovennaya",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "oplata-qr",
+            "supermarkety",
+            "samokaty"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Оплата по QR",
+            "Супермаркеты",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "kinomanka",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "gorodskoy-transport",
+            "knigi",
+            "kinoteatry",
+            "samokaty",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Городской транспорт",
+            "Книги",
+            "Онлайн-кинотеатры",
+            "Самокаты Яндекс Go",
+            "Все покупки"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "krasota",
+            "gorodskoy-transport",
+            "kinoteatry",
+            "samokaty"
+          ],
+          "titles": [
+            "Книги",
+            "Красота",
+            "Городской транспорт",
+            "Онлайн-кинотеатры",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "kinopoisk",
+            "knigi",
+            "apteki",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Кинопоиск",
+            "Книги",
+            "Аптеки",
+            "Питомцы"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "kinopoisk",
+            "oplata-telefonom",
+            "gorodskoy-transport",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Кинопоиск",
+            "Оплата телефоном",
+            "Городской транспорт",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "kinomanka",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "igry",
+            "supermarkety",
+            "kinoteatry"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Игры",
+            "Супермаркеты",
+            "Онлайн-кинотеатры"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 4,
+          "offers": 17,
+          "chance_baseline": 1.18
+        },
+        {
+          "room": "kinomanka",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "igry",
+            "samokaty",
+            "krasota"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Игры",
+            "Самокаты Яндекс Go",
+            "Красота"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 4,
+          "offers": 17,
+          "chance_baseline": 1.18
+        },
+        {
+          "room": "krasotka",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "supermarkety",
+            "krasota",
+            "gorodskoy-transport",
+            "cvety",
+            "samokaty"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Красота",
+            "Городской транспорт",
+            "Цветы",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "krasotka",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "supermarkety",
+            "krasota",
+            "gorodskoy-transport",
+            "knigi",
+            "cvety"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Красота",
+            "Городской транспорт",
+            "Книги",
+            "Цветы"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "krasotka",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "gorodskoy-transport",
+            "muzyka-koncerty",
+            "knigi"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Городской транспорт",
+            "Яндекс Музыка",
+            "Книги"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 5,
+          "offers": 17,
+          "chance_baseline": 1.47
+        },
+        {
+          "room": "krasotka",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "supermarkety",
+            "knigi",
+            "market",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Супермаркеты",
+            "Книги",
+            "Яндекс Маркет",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 5,
+          "offers": 17,
+          "chance_baseline": 1.47
+        },
+        {
+          "room": "krasotka",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "krasota",
+            "supermarkety",
+            "cvety"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Красота",
+            "Супермаркеты",
+            "Цветы"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "krasotka",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "krasota",
+            "afisha",
+            "supermarkety"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Красота",
+            "Яндекс Афиша",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "knigi",
+            "apteki",
+            "gorodskoy-transport",
+            "market",
+            "cvety"
+          ],
+          "titles": [
+            "Книги",
+            "Аптеки",
+            "Городской транспорт",
+            "Яндекс Маркет",
+            "Цветы"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "knigi",
+            "apteki",
+            "samokaty",
+            "krasota",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Книги",
+            "Аптеки",
+            "Самокаты Яндекс Go",
+            "Красота",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "knigi",
+            "apteki",
+            "gorodskoy-transport",
+            "supermarkety"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Аптеки",
+            "Городской транспорт",
+            "Супермаркеты"
+          ],
+          "boosted_in_top": 2,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "knigi",
+            "supermarkety",
+            "vse-pokupki",
+            "gorodskoy-transport"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Книги",
+            "Супермаркеты",
+            "Все покупки",
+            "Городской транспорт"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 3,
+          "offers": 17,
+          "chance_baseline": 0.88
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "afisha",
+            "oplata-qr",
+            "samokaty"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Яндекс Афиша",
+            "Оплата по QR",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 2,
+          "offers": 17,
+          "chance_baseline": 0.59
+        },
+        {
+          "room": "razvivaetsya",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "afisha",
+            "krasota",
+            "samokaty"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Яндекс Афиша",
+            "Красота",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 1,
+          "eligible": 2,
+          "offers": 17,
+          "chance_baseline": 0.59
+        },
+        {
+          "room": "gedonistka",
+          "month": "sentyabr",
+          "repeat": 0,
+          "selected": [
+            "supermarkety",
+            "gorodskoy-transport",
+            "puteshestviya",
+            "samokaty",
+            "vse-pokupki"
+          ],
+          "titles": [
+            "Супермаркеты",
+            "Городской транспорт",
+            "Яндекс Путешествия",
+            "Самокаты Яндекс Go",
+            "Все покупки"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 8,
+          "offers": 17,
+          "chance_baseline": 2.35
+        },
+        {
+          "room": "gedonistka",
+          "month": "sentyabr",
+          "repeat": 1,
+          "selected": [
+            "gorodskoy-transport",
+            "supermarkety",
+            "knigi",
+            "puteshestviya",
+            "samokaty"
+          ],
+          "titles": [
+            "Городской транспорт",
+            "Супермаркеты",
+            "Книги",
+            "Яндекс Путешествия",
+            "Самокаты Яндекс Go"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 8,
+          "offers": 17,
+          "chance_baseline": 2.35
+        },
+        {
+          "room": "gedonistka",
+          "month": "oktyabr",
+          "repeat": 0,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "supermarkety",
+            "pitomcy",
+            "knigi"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Супермаркеты",
+            "Питомцы",
+            "Книги"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "gedonistka",
+          "month": "oktyabr",
+          "repeat": 1,
+          "selected": [
+            "lavka",
+            "gorodskoy-transport",
+            "knigi",
+            "supermarkety",
+            "pitomcy"
+          ],
+          "titles": [
+            "Яндекс Лавка",
+            "Городской транспорт",
+            "Книги",
+            "Супермаркеты",
+            "Питомцы"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 7,
+          "offers": 17,
+          "chance_baseline": 2.06
+        },
+        {
+          "room": "gedonistka",
+          "month": "noyabr",
+          "repeat": 0,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "supermarkety",
+            "samokaty",
+            "igry"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Супермаркеты",
+            "Самокаты Яндекс Go",
+            "Игры"
+          ],
+          "boosted_in_top": 3,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        },
+        {
+          "room": "gedonistka",
+          "month": "noyabr",
+          "repeat": 1,
+          "selected": [
+            "drugie-servisy",
+            "drive",
+            "samokaty",
+            "supermarkety",
+            "puteshestviya"
+          ],
+          "titles": [
+            "Другие сервисы Яндекса",
+            "Яндекс Драйв",
+            "Самокаты Яндекс Go",
+            "Супермаркеты",
+            "Яндекс Путешествия"
+          ],
+          "boosted_in_top": 4,
+          "eligible": 6,
+          "offers": 17,
+          "chance_baseline": 1.76
+        }
+      ]
+    }
+  ]
+}

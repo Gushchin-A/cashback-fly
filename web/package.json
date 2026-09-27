@@ -1,0 +1,19 @@
+{
+  "name": "fly-cashback-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "0.181.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.6",
+    "@types/three": "0.181.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.12"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "neural_ms_per_step": 50.0,
+  "repeats": 5,
+  "scaling": [
+    {
+      "threads": 1,
+      "median_seconds": 0.1653,
+      "neural_ms_per_wall_second": 302.5,
+      "aggregate_speedup": 1.0
+    },
+    {
+      "threads": 2,
+      "median_seconds": 0.1661,
+      "neural_ms_per_wall_second": 602.1,
+      "aggregate_speedup": 1.99
+    },
+    {
+      "threads": 3,
+      "median_seconds": 0.1848,
+      "neural_ms_per_wall_second": 811.8,
+      "aggregate_speedup": 2.68
+    },
+    {
+      "threads": 4,
+      "median_seconds": 0.2173,
+      "neural_ms_per_wall_second": 920.4,
+      "aggregate_speedup": 3.04
+    },
+    {
+      "threads": 5,
+      "median_seconds": 0.3031,
+      "neural_ms_per_wall_second": 824.8,
+      "aggregate_speedup": 2.73
+    },
+    {
+      "threads": 6,
+      "median_seconds": 0.3786,
+      "neural_ms_per_wall_second": 792.4,
+      "aggregate_speedup": 2.62
+    }
+  ]
+}
